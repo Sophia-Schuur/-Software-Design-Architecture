@@ -1,0 +1,7 @@
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\bin\Debug\4 - Composite PvZ.exe.config
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\bin\Debug\4 - Composite PvZ.exe
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\bin\Debug\4 - Composite PvZ.pdb
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\obj\Debug\4 - Composite PvZ.csprojAssemblyReference.cache
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\obj\Debug\4 - Composite PvZ.csproj.CoreCompileInputs.cache
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\obj\Debug\4 - Composite PvZ.exe
+C:\Users\Sophie\Documents\Visual Studio 2017\Spring 2019\CptS 487\4 - Composite PvZ\4 - Composite PvZ\obj\Debug\4 - Composite PvZ.pdb
