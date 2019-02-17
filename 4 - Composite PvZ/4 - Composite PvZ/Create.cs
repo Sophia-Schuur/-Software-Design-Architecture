@@ -11,6 +11,7 @@ namespace _4___Composite_PvZ
         public bool isRunning = false;
         private List<Zombie> zombies;
         private int damage = 25;
+        private Printing printing;
 
         public bool IsRunning { get { return isRunning; } }
 
@@ -18,27 +19,28 @@ namespace _4___Composite_PvZ
         {
             this.isRunning = true;
             this.zombies = zombies;
+            this.printing = new Printing();
         }
 
         public void Tick()
         {
-            
-            //get zombie type from user
-            Console.Write("  Enter Zombie type int:  ");
+            Console.Write("\n  Input Zombie type integer:  ");
             var accessoryType = Console.ReadLine();
-            if(accessoryType == "done")
+            
+            if (accessoryType == "q")
             {
                 Stop();
+                return;
             }
-            //add user specifed zombie to list of zombies
-            //TO DO CHECK INPUT
-            zombies.Add(new Zombie(accessoryType));
-            Console.Write("[");
-            foreach (var z in zombies)
+
+            if (accessoryType != "1" && accessoryType != "2" && accessoryType != "3" && accessoryType != "4")
             {
-                Console.Write($"{ z.Type}/{ z.Health} ");
+                Console.WriteLine(" [!] - INVALID INPUT. Input an integer between 1-4 or 'q' to stop adding zombies.");
+                return;
             }
-            Console.Write("]");
+            zombies.Add(new Zombie(accessoryType));
+
+            printing.PrintArray(ref zombies);
         }
         public void Update()
         {
@@ -52,8 +54,7 @@ namespace _4___Composite_PvZ
             isRunning = true;
         }
         public void Stop()
-        {
-            
+        {            
             isRunning = false;
         }
     }

@@ -27,29 +27,25 @@ namespace _4___Composite_PvZ
         public void TakeDamage(int damage)
         {
             if(_accessory != null)
-            {
+            {             
                 _accessory.Health -= damage;
-                if(_accessory.Health <= 0)
+                var temp = _accessory.Health;   //temp health for leftover damage
+
+                if (_accessory.Health <= 0 && _accessory.Type == "R")   //dead zombie
                 {
-                    health += _accessory.Health;
-                    if(_accessory.Type == "R")
-                    {
-                        Die();
-                    }
-                    else
-                    {
-                        _accessory = AccessoryFactory.GetAccessory("1");
-                    }
+                    Die();
                 }
-            }
-            else
-            {
-                health -= damage;
+                else if (_accessory.Health <= 50 && _accessory.Type != "R") //become regular zombie if health is below 50 (regular zombie max health)
+                {
+                    _accessory = AccessoryFactory.GetAccessory("1");
+                    _accessory.Health = temp;
+                    Console.Write(" Becoming Regular zombie.");
+                }                
             }
         }
         public void Die()
         {
-            isAlive = false;
+            isAlive = false;          
         }
     }
 }
