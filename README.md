@@ -1,2 +1,2 @@
-# -Software-Design-Architecture
+# Software-Design-Architecture
 Game development in C# and MonoGame.
