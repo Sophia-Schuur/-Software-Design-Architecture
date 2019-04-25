@@ -1,0 +1,63 @@
+{
+	"Pause": {
+		"Tag": "Pause",
+		"Scripts": ["Pause"]
+	},
+
+	"QuitButton": {
+		"Tag": "Pause",
+		"Sprite": {
+			"Path": "Buttons/ExitButton",
+			"Width": 512,
+			"Height": 64,
+			"Depth": 0.8,
+			"Scale": 1,
+			"Rotatable": false
+		},
+
+		"Position": {
+			"X": 384,
+			"Y": 310
+		},
+		"Scripts": ["ExitButton"]
+	},
+
+	"ResumeButton": {
+		"Tag": "Pause",
+		"Sprite": {
+			"Path": "Buttons/ResumeButton",
+			"Width": 512,
+			"Height": 64,
+			"Scale": 1,
+			"Depth": 0.8,
+			"Rotatable": false, 
+		},
+
+		"Position": {
+			"X": 384,
+			"Y": 406
+		},
+		
+		"Scripts": ["ResumeButton"]
+	},
+
+	"MainMenuButton" : {
+		"Tag": "Pause",
+		"Sprite": {
+			"Path": "Buttons/MainMenuButton",
+			"Width": 512,
+			"Height": 64,
+			"Scale": 1,
+			"Depth": 0.8,
+			"Rotatable": false, 
+		},
+
+		"Position": {
+			"X": 384,
+			"Y": 502
+		},
+		
+		"Scripts": ["MainMenuButton"]
+	},
+
+}
